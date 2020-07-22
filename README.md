@@ -1,7 +1,7 @@
+![screenshot](https://github.com/adesurirey/typora-notes-dark-theme/blob/master/screenshot.png)
+
 # Notes dark theme for Typora
 A dark theme inspired by Apple's Notes app.
-
-![screenshot](https://github.com/adesurirey/typora-notes-dark-theme/blob/master/screenshot.png)
 
 ## Installation instructions
 - Download the zipped [project package](https://github.com/adesurirey/typora-notes-dark-theme/releases/latest).
