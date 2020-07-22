@@ -28,6 +28,7 @@
   --text-color-secondary: #d2d3d3;
   --control-text-color: var(--text-color);
   --meta-content-color: var(--primary-color);
+  --select-text-bg-color: rgba(255, 255, 255, 0.2);
 
   --border-radius: 3px;
 
