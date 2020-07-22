@@ -29,8 +29,12 @@
   --control-text-color: var(--text-color);
   --meta-content-color: var(--primary-color);
 
+  --border-radius: 3px;
+
   --font-family: system-ui;
   --monospace: 'Fira Mono', 'Cousine', 'Consolas', monospace;
+
+  --rawblock-edit-panel-bd: var(--bg-color-dark);
 
   --side-bar-bg-color: var(--bg-color-dark);
   --item-hover-bg-color: var(--bg-color);
@@ -260,8 +264,7 @@ code,
 tt {
   border: 1px solid var(--dark-trait);
   background-color: var(--bg-color-dark);
-  border-radius: 3px;
-  padding: 0;
+  border-radius: var(--border-radius);
   padding: 2px 4px 0px 4px;
   font-size: 0.9em;
   font-family: var(--monospace);
@@ -275,6 +278,37 @@ tt {
   background-color: var(--side-bar-bg-color);
 }
 
+#write pre.md-meta-block {
+  padding: 1rem;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: var(--bg-color-dark);
+  border: 0;
+  border-radius: var(--border-radius);
+  color: var(--light-trait-400);
+  margin-top: 0 !important;
+}
+
+#write .mathjax-block .md-rawblock-tooltip {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+#write .mathjax-block .md-math-container {
+  border-top-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+#write .md-mathblock-panel .md-rawblock-control:first-of-type {
+  border-top-left-radius: var(--border-radius);
+}
+
+.md-mathjax-midline {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
 code {
   padding: 0 2px 0 2px;
 }
@@ -283,17 +317,27 @@ code {
   padding-left: 4px;
 }
 
+.code-tooltip {
+  box-shadow: none;
+  border-radius: var(--border-radius);
+}
+
 #write .code-tooltip {
   bottom: initial;
-  top: calc(100% - 1px);
+  top: 100%;
   left: initial;
   right: -1px;
-  background: var(--side-bar-bg-color);
+  background: var(--bg-color-dark);
   border: 1px solid var(--dark-trait);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-top: 0;
   font-family: var(--monospace);
+}
+
+#write .md-mathblock-panel .code-tooltip {
+  right: 0;
+  border: none;
 }
 
 #write .md-task-list-item > input {
@@ -331,19 +375,8 @@ code {
   font-weight: 500;
 }
 
-#write pre.md-meta-block {
-  padding: 1rem;
-  font-size: 85%;
-  line-height: 1.45;
-  background-color: var(--bg-color-dark);
-  border: 0;
-  border-radius: 3px;
-  color: var(--light-trait-400);
-  margin-top: 0 !important;
-}
-
 .md-image > .md-meta {
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   padding: 2px 0px 0px 4px;
   font-size: 0.9em;
   color: inherit;
@@ -359,7 +392,7 @@ code {
 }
 
 #md-searchpanel input {
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   box-shadow: none;
 }
 #md-searchpanel input:focus {
