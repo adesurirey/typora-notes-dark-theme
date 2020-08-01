@@ -313,6 +313,10 @@ tt {
   color: var(--text-color);
 }
 
+.md-inline-math script {
+  color: #f3b3f8;
+}
+
 code {
   padding: 0 2px 0 2px;
 }
