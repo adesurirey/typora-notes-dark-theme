@@ -203,9 +203,12 @@ ol:last-child {
 }
 
 blockquote {
-  border-left: 4px solid var(--dark-trait);
-  padding: 0 15px;
-  color: var(--light-trait-400);
+  margin-left: -14px;
+  margin-right: -14px;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--light-trait-300);
+  background-color: var(--light-trait-100);
+  padding: 7px 14px 7px 10px;
 }
 
 blockquote blockquote {
