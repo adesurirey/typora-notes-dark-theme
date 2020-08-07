@@ -1,4 +1,4 @@
-@import './notes/codeblock.xydark.css';
+@import './notes-dark/codeblock.xydark.css';
 
 @font-face {
   font-family: 'Fira Mono';
@@ -17,19 +17,19 @@
 :root {
   --primary-color: #fcba03;
   --primary-color-rgb: 252, 186, 3;
-  --bg-color: #292929;
-  --bg-color-dark: #1f1f1f;
-  --border-color: #141414;
-  --dark-trait-100: #3d3d3d;
-  --dark-trait-200: #545454;
-  --dark-trait-300: #777;
-  --dark-trait-400: #8c8c8c;
+  --bg-color: #ffffff;
+  --bg-color-dark: #e5e5e5;
+  --border-color: #d6d6d6;
+  --dark-trait-100: #c2c2c2;
+  --dark-trait-200: #adadad;
+  --dark-trait-300: #999999;
+  --dark-trait-400: #858585;
 
-  --text-color: #f8f8f2;
-  --text-color-secondary: #d2d3d3;
+  --text-color: #1f1f1f;
+  --text-color-secondary: #333333;
   --control-text-color: var(--text-color);
   --meta-content-color: var(--primary-color);
-  --select-text-bg-color: rgba(255, 255, 255, 0.2);
+  --select-text-bg-color: rgba(0, 0, 0, 0.1);
 
   --border-radius: 3px;
 
@@ -165,7 +165,7 @@ mark {
     rgba(var(--primary-color-rgb), 0.30) 100%,
     rgba(var(--primary-color-rgb), 0.25)
   );
-  color: #fff;
+  color: #000;
 }
 
 p,
@@ -392,7 +392,6 @@ code {
   height: 100%;
   width: 100%;
   text-align: center;
-  color: var(--border-color);
   font-size: 12px;
   font-weight: 500;
 }
