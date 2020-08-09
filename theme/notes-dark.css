@@ -17,6 +17,7 @@
 :root {
   --primary-color: #fcba03;
   --primary-color-rgb: 252, 186, 3;
+
   --bg-color: #292929;
   --bg-color-dark: #1f1f1f;
   --dark-trait: #141414;
@@ -27,17 +28,19 @@
 
   --text-color: #f8f8f2;
   --text-color-secondary: #d2d3d3;
-  --control-text-color: var(--text-color);
-  --meta-content-color: var(--primary-color);
   --select-text-bg-color: rgba(255, 255, 255, 0.2);
+
+  --code-color: #f3b3f8;
 
   --border-radius: 3px;
 
+  --font-size: 14px;
   --font-family: system-ui;
   --monospace: 'Fira Mono', 'Cousine', 'Consolas', monospace;
 
   --rawblock-edit-panel-bd: var(--bg-color-dark);
-
+  --control-text-color: var(--text-color);
+  --meta-content-color: var(--primary-color);
   --side-bar-bg-color: var(--bg-color-dark);
   --item-hover-bg-color: var(--bg-color);
   --active-file-bg-color: var(--bg-color);
@@ -47,7 +50,7 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: var(--font-size);
 }
 
 body {
@@ -328,7 +331,7 @@ tt {
 }
 
 .md-inline-math script {
-  color: #f3b3f8;
+  color: var(--code-color);
 }
 
 code {
@@ -439,4 +442,19 @@ code {
 
 #md-notification .btn {
   border: 0;
+}
+
+/* Source mode */
+.CodeMirror.cm-s-typora-default *,
+.cm-s-typora-default * {
+  background: inherit;
+  color: var(--text-color);
+  font-family: var(--monospace);
+  font-size: var(--font-size) !important;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+  border-left: 2px solid var(--light-trait-400);
 }
