@@ -430,6 +430,36 @@ code {
   border-bottom: none;
 }
 
+.outline-expander {
+  width: 1.5rem;
+  vertical-align: initial;
+}
+.outline-expander:before,
+.outline-expander:hover:before,
+.outline-item-open > .outline-item > .outline-expander:before,
+.outline-item-open > .outline-item > .outline-expander:hover:before {
+  content: "\f125";
+  transition: transform 125ms ease-in-out;
+}
+.outline-item-open > .outline-item > .outline-expander:hover:before,
+.outline-item-open > .outline-item > .outline-expander:before {
+  transform: rotate(90deg);
+}
+.outline-label:hover {
+  text-decoration: none;
+}
+
+#toc-dropmenu {
+  background: var(--bg-color-dark);
+}
+#toc-dropmenu .outline-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.dropdown-menu .divider {
+  display: none;
+}
+
 /* New file animation */
 .blink-area {
   animation: none;
