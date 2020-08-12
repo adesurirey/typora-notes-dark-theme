@@ -412,8 +412,27 @@ code {
   padding-bottom: 20px;
 }
 
+/* Source mode */
+.CodeMirror.cm-s-typora-default *,
+.cm-s-typora-default * {
+  background: inherit;
+  color: var(--text-color);
+  font-family: var(--monospace);
+  font-size: var(--font-size) !important;
+  font-style: normal;
+  font-weight: normal;
+}
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+  border-left: 2px solid var(--light-trait-400);
+}
+
 .sidebar-tabs {
   border-bottom: none;
+}
+
+/* New file animation */
+.blink-area {
+  animation: none;
 }
 
 #md-searchpanel input {
@@ -442,19 +461,4 @@ code {
 
 #md-notification .btn {
   border: 0;
-}
-
-/* Source mode */
-.CodeMirror.cm-s-typora-default *,
-.cm-s-typora-default * {
-  background: inherit;
-  color: var(--text-color);
-  font-family: var(--monospace);
-  font-size: var(--font-size) !important;
-  font-style: normal;
-  font-weight: normal;
-}
-
-.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
-  border-left: 2px solid var(--light-trait-400);
 }
