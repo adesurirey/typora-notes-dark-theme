@@ -40,9 +40,12 @@
   --font-family: system-ui;
   --monospace: 'Fira Mono', 'Cousine', 'Consolas', monospace;
 
+  --heading-char-color: var(--light-trait-400);
+  --color-popover-bg-color: var(--text-color);
   --rawblock-edit-panel-bd: var(--bg-color-dark);
   --control-text-color: var(--text-color);
   --meta-content-color: var(--primary-color);
+  --primary-btn-border-color: var(--primary-color);
   --side-bar-bg-color: var(--bg-color-dark);
   --item-hover-bg-color: var(--bg-color);
   --active-file-bg-color: var(--bg-color);
