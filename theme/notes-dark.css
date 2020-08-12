@@ -460,6 +460,20 @@ code {
   display: none;
 }
 
+.file-node-background {
+  height: 31px;
+}
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+  visibility: visible;
+}
+.file-node-icon {
+  margin-right: 8px;
+}
+.file-library-node:not(.file-node-root):focus>.file-node-content {
+  outline: none;
+}
+
 /* New file animation */
 .blink-area {
   animation: none;
@@ -478,11 +492,6 @@ code {
 }
 #md-searchpanel .btn:not(.close-btn):hover {
   box-shadow: none;
-}
-
-.file-node-content:hover .file-node-icon,
-.file-node-content:hover .file-node-open-state {
-  visibility: visible;
 }
 
 .mac-seamless-mode #typora-sidebar {
