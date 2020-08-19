@@ -47,7 +47,7 @@
   --meta-content-color: var(--primary-color);
   --primary-btn-border-color: var(--primary-color);
   --side-bar-bg-color: var(--bg-color-dark);
-  --item-hover-bg-color: var(--bg-color);
+  --item-hover-bg-color: var(--bg-color-dark);
   --active-file-bg-color: var(--bg-color);
   --active-file-border-color: var(--bg-color);
   --window-border: 1px solid var(--bg-color);
