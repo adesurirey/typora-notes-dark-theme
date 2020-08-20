@@ -227,6 +227,12 @@ mark,
 .md-search-select {
   outline: 2px solid var(--primary-color);
 }
+.outline-item.select, .ty-search-item-line.select, .ty-search-item.select {
+  outline-width: 2px;
+}
+.outline-item.select {
+  outline-offset: 0px;
+}
 
 blockquote {
   margin-left: -14px;
