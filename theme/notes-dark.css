@@ -28,8 +28,10 @@
 
   --text-color: #f8f8f2;
   --text-color-secondary: #d2d3d3;
-  --select-text-bg-color: rgba(255, 255, 255, 0.2);
+  --text-highlight-color: #fff;
   --text-highlight-bg: rgba(var(--primary-color-rgb), 0.3);
+  --select-text-bg-color: rgba(255, 255, 255, 0.2);
+  --search-select-text-color: var(--text-highlight-color);
   --search-select-bg-color: var(--text-highlight-bg);
 
   --code-color: #f3b3f8;
@@ -214,12 +216,16 @@ ol:last-child {
 mark,
 .ty-file-search-match-text,
 .md-search-hit {
-  background: var(--text-highlight-bg);
-  color: #fff;
+  background: var(--search-select-bg-color);
+  color: var(--search-select-text-color);
 }
-
 .md-search-hit * {
-  color: #fff;
+  color: var(--search-select-text-color);
+}
+.cm-search-hit.CodeMirror-selectedtext,
+.md-search-hit.md-search-select,
+.md-search-select {
+  outline: 2px solid var(--primary-color);
 }
 
 blockquote {
