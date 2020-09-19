@@ -475,6 +475,10 @@ code {
   display: none;
 }
 
+.context-menu {
+  background-color: var(--bg-color-dark);
+}
+
 .file-node-background {
   height: 31px;
 }
