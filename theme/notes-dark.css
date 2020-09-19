@@ -494,6 +494,11 @@ code {
   animation: none;
 }
 
+.file-list-item-summary {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
+
 #md-searchpanel input {
   border-radius: var(--border-radius);
   box-shadow: none;
