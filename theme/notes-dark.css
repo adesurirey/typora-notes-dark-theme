@@ -20,6 +20,7 @@
 
   --bg-color: #292929;
   --bg-color-dark: #1f1f1f;
+  --bg-color-light: #444;
   --dark-trait: #141414;
   --light-trait-100: #3d3d3d;
   --light-trait-200: #545454;
@@ -54,6 +55,8 @@
   --active-file-border-color: var(--bg-color);
   --window-border: 1px solid var(--bg-color);
   --focus-ring-color: transparent;
+  --table-bg-darker-color: var(--bg-color-dark);
+  --table-bg-color: var(--bg-color);
 }
 
 html {
@@ -524,4 +527,61 @@ code {
 
 #md-notification .btn {
   border: 0;
+}
+
+.megamenu-menu {
+  background-color: var(--bg-color-dark);
+}
+
+.megamenu-opened header {
+  background-image: none;
+}
+
+/* mega menu */
+.megamenu-content,
+.megamenu-opened header {
+    background: var(--bg-color);
+}
+
+.megamenu-opened .megamenu-content {
+  visibility: visible;
+  opacity: 1;
+  animation: none;
+  background-color: inherit;
+}
+
+#recent-file-panel tbody tr:nth-child(2n) {
+  background-color: var(--table-bg-darker-color);
+}
+
+#recent-file-panel tbody tr:nth-child(2n + 1) {
+  background-color: var(--table-bg-color);
+}
+
+/* long button in mega menu */
+.long-btn  {
+  border: 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+  margin-bottom: 10px;
+  margin-left: 10px;
+  background-color: var(--bg-color-light);
+}
+
+#recent-file-panel-action-btn {
+  background-color: var(--bg-color-light);
+}
+
+.long-btn:hover {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-secondary) !important;
+}
+
+#recent-file-panel-action-btn:hover{
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-secondary) !important;
+}
+
+.mouse-entered #top-titlebar .toolbar-icon.btn:hover,
+.mouse-entered #top-titlebar .toolbar-icon.btn.hover {
+    background-color: var(--bg-color-dark);
 }
