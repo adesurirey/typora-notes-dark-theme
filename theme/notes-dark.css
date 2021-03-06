@@ -50,7 +50,8 @@
   --meta-content-color: var(--primary-color);
   --primary-btn-border-color: var(--primary-color);
   --side-bar-bg-color: var(--bg-color-dark);
-  --item-hover-bg-color: var(--bg-color);
+  --item-hover-bg-color: var(--bg-color-light);
+  --item-hover-text-color: var(--text-highlight-color);
   --active-file-bg-color: var(--bg-color);
   --active-file-border-color: var(--bg-color);
   --window-border: 1px solid var(--bg-color);
@@ -558,30 +559,25 @@ code {
   background-color: var(--table-bg-color);
 }
 
-/* long button in mega menu */
-.long-btn  {
-  border: 0px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
-  margin-bottom: 10px;
-  margin-left: 10px;
-  background-color: var(--bg-color-light);
-}
-
 #recent-file-panel-action-btn {
-  background-color: var(--bg-color-light);
+  background-color: var(--bg-color);
 }
 
 .long-btn:hover {
-  background-color: var(--bg-color-dark);
-  color: var(--text-color-secondary) !important;
+  background-color: var(--item-hover-bg-color);
+  color: var(--item-hover-text-color) !important;
 }
 
 #recent-file-panel-action-btn:hover{
-  background-color: var(--bg-color-dark);
-  color: var(--text-color-secondary) !important;
+  background-color: var(--item-hover-bg-color);
+  color: var(--item-hover-text-color) !important;
 }
 
 .mouse-entered #top-titlebar .toolbar-icon.btn:hover,
 .mouse-entered #top-titlebar .toolbar-icon.btn.hover {
-    background-color: var(--bg-color-dark);
+    background-color: var(--item-hover-bg-color);
+}
+
+#m-import-local:hover .preference-item-hint {
+  color: var(--item-hover-text-color);
 }
