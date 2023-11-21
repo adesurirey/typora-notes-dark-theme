@@ -387,6 +387,7 @@ code {
   position: absolute;
   border: 1px solid var(--light-trait-200);
   border-radius: 50%;
+  margin-top: 0.2rem;
   margin-left: -1.8rem;
   height: 1.2rem;
   width: 1.2rem;
